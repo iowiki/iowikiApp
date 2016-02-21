@@ -23,15 +23,15 @@
 		C518F8CC549FE07F26770F29 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71510C11C79E10E0064B9BA /* IOWIKI_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOWIKI_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71510C41C79E10E0064B9BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C71510C61C79E10E0064B9BA /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuVC.swift; path = IOWIKI_Demo/MenuVC.swift; sourceTree = "<group>"; };
+		C71510C61C79E10E0064B9BA /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		C71510C91C79E10E0064B9BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C71510CB1C79E10E0064B9BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C71510CE1C79E10E0064B9BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C71510D01C79E10E0064B9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7E347EE1C7A194F00CE786C /* MenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTVC.swift; sourceTree = "<group>"; };
 		C7EAEA7B1C7A01B0004B9BAF /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
-		C7EAEA7D1C7A055C004B9BAF /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		C7EAEA7F1C7A0577004B9BAF /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		C7EAEA7D1C7A055C004B9BAF /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ../HomeVC.swift; sourceTree = "<group>"; };
+		C7EAEA7F1C7A0577004B9BAF /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = ../SettingsVC.swift; sourceTree = "<group>"; };
 		C8963C128210A93084D2E5BC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FB34612925A1177E832F83FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,10 +68,6 @@
 		C71510B81C79E10E0064B9BA = {
 			isa = PBXGroup;
 			children = (
-				C7E347EE1C7A194F00CE786C /* MenuTVC.swift */,
-				C71510C61C79E10E0064B9BA /* MenuVC.swift */,
-				C7EAEA7D1C7A055C004B9BAF /* HomeVC.swift */,
-				C7EAEA7F1C7A0577004B9BAF /* SettingsVC.swift */,
 				C7EAEA7B1C7A01B0004B9BAF /* PodFile */,
 				C71510C31C79E10E0064B9BA /* IOWIKI_Demo */,
 				C71510C21C79E10E0064B9BA /* Products */,
@@ -91,13 +87,34 @@
 		C71510C31C79E10E0064B9BA /* IOWIKI_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				C71510C41C79E10E0064B9BA /* AppDelegate.swift */,
+				C7E347F01C7A229800CE786C /* View Controllers */,
+				C7E347F11C7A22A500CE786C /* Custom Classes */,
 				C71510C81C79E10E0064B9BA /* Main.storyboard */,
+				C71510C41C79E10E0064B9BA /* AppDelegate.swift */,
 				C71510CB1C79E10E0064B9BA /* Assets.xcassets */,
 				C71510CD1C79E10E0064B9BA /* LaunchScreen.storyboard */,
 				C71510D01C79E10E0064B9BA /* Info.plist */,
 			);
 			path = IOWIKI_Demo;
+			sourceTree = "<group>";
+		};
+		C7E347F01C7A229800CE786C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C71510C61C79E10E0064B9BA /* MenuVC.swift */,
+				C7EAEA7D1C7A055C004B9BAF /* HomeVC.swift */,
+				C7EAEA7F1C7A0577004B9BAF /* SettingsVC.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C7E347F11C7A22A500CE786C /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C7E347EE1C7A194F00CE786C /* MenuTVC.swift */,
+			);
+			name = "Custom Classes";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
